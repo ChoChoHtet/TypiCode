@@ -40,16 +40,16 @@ android {
     productFlavors {
         local {
             dimension "version"
-            applicationIdSuffix ".dev"
-            versionNameSuffix "-dev"
+            applicationIdSuffix ".local"
+            versionNameSuffix "-local"
             versionCode 1
             versionName "1"
             buildConfigField("String", "ENDPOINT", "\"https://jsonplaceholder.typicode.com/\"")
         }
         staging {
             dimension "version"
-            applicationIdSuffix ".uat"
-            versionNameSuffix "-uat"
+            applicationIdSuffix ".staging"
+            versionNameSuffix "-staging"
             versionCode 1
             versionName "1"
             buildConfigField("String", "ENDPOINT", "\"https://jsonplaceholder.typicode.com/\"")
@@ -97,12 +97,13 @@ dependencies {
     //implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
     // implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
 
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.1'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.1'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.0'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlinx_coroutines"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinx_coroutines"
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle"
     // liveData scope
-    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle"
 
     implementation "com.google.dagger:dagger-android:$dagger_version"
     implementation "com.google.dagger:dagger-android-support:$dagger_version"

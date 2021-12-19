@@ -7,6 +7,8 @@ buildscript {
         rxjava_version = "2.2.20"
         dagger_version = "2.35.1"
         lottie_version = '4.0.0'
+        kotlinx_coroutines="1.5.1"
+        lifecycle="2.4.0"
     }
     repositories {
         google()
