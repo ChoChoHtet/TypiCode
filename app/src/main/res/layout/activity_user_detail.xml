@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/medium_margin"
+        tools:context=".view.UserDetailActivity"
+
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_test"
+            style="@style/CommonTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/user_info_title"
+            android:textSize="@dimen/title_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name"
+            style="@style/CommonTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_people"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_test"
+            tools:text="Name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_email"
+            style="@style/CommonTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:drawableStartCompat="@drawable/ic_email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"
+            tools:text="Email" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_address_street"
+            style="@style/CommonTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:drawableStartCompat="@drawable/ic_location"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_address_city"
+            tools:text="Address Street" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_address_suite"
+            style="@style/CommonTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_address_street"
+            tools:text="Address Suite" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_address_city"
+            style="@style/CommonTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/user_address_title"
+            android:textSize="@dimen/title_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_email" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_phone"
+            style="@style/CommonTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:drawableStartCompat="@drawable/ic_phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_address_suite"
+            tools:text="phone" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_website"
+            style="@style/CommonTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:drawableStartCompat="@drawable/ic_web"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_phone"
+            tools:text="Website" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

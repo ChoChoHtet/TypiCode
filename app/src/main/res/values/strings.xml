@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Typicode</string>
+    <string name="user_info_title">User Information </string>
+    <string name="user_address_title">Address</string>
+    <string name="user_suite">Suite: %1$s</string>
+    <string name="user_zipcode">ZipCode: $1$s</string>
+    <string name="user_address">%1$s,%2$s,</string>
+</resources>
